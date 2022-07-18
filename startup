@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+from webbrowser import open
+
+# Opens Slack, GitHub, and Gmail in one browser instance.
+open("https://app.slack.com/client/T0E4VAWAZ/C0E4ZDKJS")
+open("https://github.com/")
+open("https://mail.google.com/mail/u/0/#inbox")
