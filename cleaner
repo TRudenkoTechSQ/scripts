@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+
+if [[ $# -lt 1 || "$1" != "-y" ]]; then
+	echo "No confirmation: Aborting"
+
+else 
+	for i in ./*; do
+		mv "$i" "$(echo "${i,,}" | tr " " "_" )"
+	done
+fi
